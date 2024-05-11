@@ -11,6 +11,7 @@ let rate = 0
 // ForEach is an Array method, you can use this to iterate thought you Array.
 values.forEach((btn, idx)=>{
     btn.addEventListener('click', ()=>{
+        selectBtn(btn)
         let btnValue = idx + 1
         rate = btnValue
     })
@@ -32,4 +33,12 @@ function toggleCards(){
     const thankCard = document.querySelector('#thank-state')
     rateCard.classList.toggle('hidden') //Toggle the hidden class, so, if it will add/remove the class.
     thankCard.classList.toggle('hidden') //Toggle the hidden class, so, if it will add/remove the class.
+}
+
+function selectBtn(btn){
+    values.forEach((btn)=>{
+        btn.classList.remove('selected')
+    })
+
+    btn.classList.add('selected')
 }

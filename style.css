@@ -133,7 +133,6 @@ body {
 }
 
 /**thank state*/
-
 .thank-state {
   margin: 0 auto;
   padding: 50px 30px;
@@ -166,6 +165,11 @@ body {
   }
 }
 
+/* ! Added: */
 .hidden {
     display: none;
+}
+.selected {
+    background: var(--LightGrey);
+    color: var(--White);
 }
